@@ -1,0 +1,18 @@
+﻿body
+{
+    font-family: Tahoma;
+	font-size:small;	
+	color: Black;
+}
+
+.LinkItems
+{
+	font-family: Tahoma;
+	font-size:medium;	
+	color:Blue;
+}
+
+.TestCss
+{
+	font-weight:bold;
+}

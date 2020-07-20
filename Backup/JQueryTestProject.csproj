@@ -1,0 +1,205 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0BDA46D-B85E-4E40-81E6-4590A6CFC56E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JQueryTestProject</RootNamespace>
+    <AssemblyName>JQueryTestProject</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.DocumentReady.aspx" />
+    <Content Include="2.ClickEvent.aspx" />
+    <Content Include="3.AddRemoveCss.aspx" />
+    <Content Include="4.SpecialEffects.aspx" />
+    <Content Include="5.Callback.aspx" />
+    <Content Include="2b.FindElement.aspx" />
+    <Content Include="6.EachEvent.aspx" />
+    <Content Include="2c.FindElementII.aspx" />
+    <Content Include="7_AJAX_1.aspx" />
+    <Content Include="7_AJAX_2.aspx" />
+    <Content Include="7_AJAX_3.aspx" />
+    <Content Include="StyleSheets\MyTest.css" />
+    <Content Include="Template.aspx" />
+    <Content Include="DefaultHome.aspx" />
+    <Content Include="jQuery File\jquery-1.4.1-vsdoc.js" />
+    <Content Include="jQuery File\jquery-1.4.1.js" />
+    <Content Include="StyleSheets\MainPage.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.DocumentReady.aspx.cs">
+      <DependentUpon>1.DocumentReady.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1.DocumentReady.aspx.designer.cs">
+      <DependentUpon>1.DocumentReady.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2.ClickEvent.aspx.cs">
+      <DependentUpon>2.ClickEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2.ClickEvent.aspx.designer.cs">
+      <DependentUpon>2.ClickEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3.AddRemoveCss.aspx.cs">
+      <DependentUpon>3.AddRemoveCss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3.AddRemoveCss.aspx.designer.cs">
+      <DependentUpon>3.AddRemoveCss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4.SpecialEffects.aspx.cs">
+      <DependentUpon>4.SpecialEffects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4.SpecialEffects.aspx.designer.cs">
+      <DependentUpon>4.SpecialEffects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5.Callback.aspx.cs">
+      <DependentUpon>5.Callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5.Callback.aspx.designer.cs">
+      <DependentUpon>5.Callback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2b.FindElement.aspx.cs">
+      <DependentUpon>2b.FindElement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2b.FindElement.aspx.designer.cs">
+      <DependentUpon>2b.FindElement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6.EachEvent.aspx.cs">
+      <DependentUpon>6.EachEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6.EachEvent.aspx.designer.cs">
+      <DependentUpon>6.EachEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2c.FindElementII.aspx.cs">
+      <DependentUpon>2c.FindElementII.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2c.FindElementII.aspx.designer.cs">
+      <DependentUpon>2c.FindElementII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7_AJAX_1.aspx.cs">
+      <DependentUpon>7_AJAX_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7_AJAX_1.aspx.designer.cs">
+      <DependentUpon>7_AJAX_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7_AJAX_2.aspx.cs">
+      <DependentUpon>7_AJAX_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7_AJAX_2.aspx.designer.cs">
+      <DependentUpon>7_AJAX_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7_AJAX_3.aspx.cs">
+      <DependentUpon>7_AJAX_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7_AJAX_3.aspx.designer.cs">
+      <DependentUpon>7_AJAX_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.aspx.cs">
+      <DependentUpon>Template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template.aspx.designer.cs">
+      <DependentUpon>Template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultHome.aspx.cs">
+      <DependentUpon>DefaultHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultHome.aspx.designer.cs">
+      <DependentUpon>DefaultHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3038</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

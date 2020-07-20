@@ -1,0 +1,21 @@
+﻿body
+{
+	font-family: Tahoma;
+	font-size:small;	
+	color: Black;
+}
+
+.RedCss
+{
+	background-color: Red;
+}
+
+.GreenCss
+{
+	background-color: Green;
+}
+
+.BlueCss
+{
+	background-color: Blue;
+}
